@@ -1,4 +1,4 @@
-//Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. x^n.
+//Two numbers are entered by the user, x and n. Write a program(Without function)to find the value of one number raised to the power of another i.e. x^n.
 import java.util.*;
 public class Exam5 {
 
