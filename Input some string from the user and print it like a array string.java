@@ -12,5 +12,8 @@ public class Main {
             str[i] = sc.next();//Take the input
         }
         System.out.println(Arrays.toString(str));
+        //In the 2nd index user should take "Ashraf" in the code.
+        str[1]="Ashraf";
+        System.out.println(Arrays.toString(str));
     }
 }
