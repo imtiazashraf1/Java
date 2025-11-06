@@ -1,4 +1,4 @@
-//Take n numbers from the user, store them in an array, and print which are odd and which are even
+//Take n numbers from the user, store them in an array, and print how many numbers are odd and how many are even
 
 
 import java.util.Scanner;
