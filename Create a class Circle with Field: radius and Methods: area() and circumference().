@@ -1,0 +1,27 @@
+//Create a class Circle with Field: radius and Methods: area() and circumference().
+import java.util.Scanner;
+class Circle {
+    double radius;
+
+    double area() {
+        return 3.1416 * radius * radius;
+    }
+
+    double circumference() {
+        return 2 * 3.1416 * radius;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the radius: ");
+        double radius = sc.nextDouble();
+
+        Circle c = new Circle();
+        c.radius = radius;
+
+        System.out.println("Area of the circle is : " + c.area());
+        System.out.println("Circumference of the circle is : " + c.circumference());
+    }
+}
