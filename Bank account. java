@@ -1,0 +1,38 @@
+class BankAccount {
+    String accountNumber;
+    String holderName;
+    double balance;
+    BankAccount(String accN, String name, double bal) {
+        accountNumber = accN;
+        holderName = name;
+        balance = bal;
+    }
+    void deposit(double amount) {
+        balance = balance + amount;
+        System.out.println("Deposited: " + amount);
+    }
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+            System.out.println("Withdrawn: " + amount);
+        }
+        else {
+            System.out.println("Not enough balance!");
+        }
+    }
+    void showBalance() {
+        System.out.println("Balance: " + balance);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+
+        BankAccount ba = new BankAccount("202509876563", "Imtiaz ashraf", 100000);
+
+        ba.showBalance();
+        ba.deposit(55710);
+        ba.showBalance();
+        ba.withdraw(25563);
+        ba.showBalance();
+    }
+}
